@@ -63,7 +63,7 @@ img {
         margin-bottom: 3rem;
         text-align: center;
     }
-    section {
+    nav {
         display: grid;
         grid-template-columns: 2;
         grid-template-rows: 5;
@@ -102,7 +102,7 @@ img {
         margin: auto;
         text-align: center;
     }
-    section {
+    nav {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
         grid-template-rows: repeat(4, 1fr);
