@@ -1,0 +1,137 @@
+
+body {
+    font-family: "Poppins";
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background-color: hsl(0, 0%, 98%);
+    margin: 0;
+    margin-bottom: 0;
+}
+#top {
+    font-weight: 200;
+    color: hsl(229, 6%, 66%);
+    margin-bottom: 0;
+}
+h1 {
+    font-weight: 600;
+    color: hsl(234, 12%, 34%);
+    margin-top: 0;
+}
+p {
+    font-weight: 400;
+    color: hsl(229, 6%, 66%);
+}
+main p {
+    max-width: 58ch;
+    margin-bottom: 2.5rem;
+}
+div {
+    background-color: hsl(0, 0%, 100%);
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+    max-width: 32ch;
+    filter: drop-shadow(0rem 0.2rem 0.5rem hsl(229, 6%, 66%));
+}
+div h1,p {
+    margin-bottom: 1rem;
+}
+img {
+    width: 20%;
+    height: auto;
+    align-self: flex-end;
+    margin-top: auto;
+}
+.attribution {
+    font-size: 11px;
+    text-align: center;
+    color: hsl(0, 0%, 0%);
+    margin-bottom: 0;
+}
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+@media screen and (max-width:759px){
+    #top, main h1 {
+        font-size: 1.7rem;
+    }
+    main {
+        max-width: 34ch;
+        margin: auto;
+        margin-top: 3rem;
+        margin-bottom: 3rem;
+        text-align: center;
+    }
+    section {
+        display: grid;
+        grid-template-columns: 2;
+        grid-template-rows: 5;
+        margin: auto;
+        margin-bottom: 2.5rem;
+        grid-gap: 1.5rem;
+    }
+    #supervisor {
+        grid-column: 1/2;
+        grid-row: 1/2;
+        border-top: 5px solid hsl(180, 62%, 55%);
+        border-radius: 5px;
+    }
+    #teambuilder {
+        grid-column: 1/2;
+        grid-row: 2/3;
+        border-top: 5px solid hsl(0, 78%, 62%);
+        border-radius: 5px;
+    }
+    #karma {
+        grid-column: 1/2;
+        grid-row: 3/4;
+        border-top: 5px solid hsl(34, 97%, 64%);
+        border-radius: 5px;
+    }
+    #calculator {
+        grid-column: 1/2;
+        grid-row: 4/5;
+        border-top: 5px solid hsl(212, 86%, 64%);
+        border-radius: 5px;
+    }
+}
+@media screen and (min-width: 760px) {    
+    main {
+        max-width: 61ch;
+        margin: auto;
+        text-align: center;
+    }
+    section {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(4, 1fr);
+        grid-gap: 2rem;
+        margin: 3.5rem;
+        margin-bottom: 2.5rem;
+    }
+    #supervisor {
+        grid-column: 1;
+        grid-row: 2/4;
+        border-top: 5px solid hsl(180, 62%, 55%);
+        border-radius: 5px;
+    }
+    #teambuilder {
+        grid-column: 2/3;
+        grid-row: 1/3;
+        border-top: 5px solid hsl(0, 78%, 62%);
+        border-radius: 5px;
+    }
+    #karma {
+        grid-column: 2/3;
+        grid-row: 3/5;
+        border-top: 5px solid hsl(34, 97%, 64%);
+        border-radius: 5px;
+    }
+    #calculator {
+        grid-column: 3/4;
+        grid-row: 2/4;
+        border-top: 5px solid hsl(212, 86%, 64%);
+        border-radius: 5px;
+    }
+}
